@@ -1,0 +1,38 @@
+body {font-family: 'Courier New', Courier, monospace;
+}
+
+tr td{
+    border: 10px;
+}
+
+*{font-size: medium;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+
+
+
+
