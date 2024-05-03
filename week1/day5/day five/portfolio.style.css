@@ -1,0 +1,117 @@
+body {
+    background-color: #000;
+    color: #0c080b;
+    transition: background-color 0.5s ease;
+    font-family: Cambria Math, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.neon-text {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    background-color: #d26fee; 
+    padding: 20px 10px;
+    text-align: center;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #a869bb;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: auto;
+    margin: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #dabfff;
+    color: #333;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+
+.contacts-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contacts-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 30px; 
+}
+
+.contacts-links a:hover {
+    color: red;
+}
+
+
