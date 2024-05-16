@@ -6,6 +6,7 @@ print(os.getcwd())
 import pygame
 from pygame.locals import *
 
+
 # Initialize Pygame
 pygame.init()
 pygame.mixer.pre_init(44100, 16, 2, 4096)
@@ -35,7 +36,14 @@ elevation = window_height * 0.8
 framepersecond = 60
 framepersecond_clock = pygame.time.Clock()
 
+<<<<<<< Updated upstream
 
+=======
+# Load game sounds
+flap_sound = pygame.mixer.Sound('sounds/wing.wav')
+collision_sound = pygame.mixer.Sound('sounds/hit.wav')
+score_sound = pygame.mixer.Sound('sounds/point.wav')
+>>>>>>> Stashed changes
 # Image loading helper function
 def load_image(image_name):
     try:
@@ -49,12 +57,20 @@ def load_image(image_name):
 
 # Load game images
 game_images = {}
+<<<<<<< Updated upstream
 game_images["background"] = load_image("background.png")
 game_images["flappydragon"] = load_image("bluebird.png")
 game_images["pipeimage"] = (load_image("pipe_up.png"), load_image("pipe_bottom.png"))
 game_images["sea_level"] = load_image("base.png")
 game_images["scoreimages"] = [load_image(f"{i}.png") for i in range(10)]
 
+=======
+game_images['background'] = load_image('images/background.png')
+game_images['flappydragon'] = load_image('images/bluebird.png')
+game_images['pipeimage'] = (load_image('images/pipe_up.png'), load_image('pipe_bottom.png'))
+game_images['sea_level'] = load_image('images/base.png')
+game_images['scoreimages'] = [load_image(f'number_{i}.png') for i in range(10)]
+>>>>>>> Stashed changes
 
 # Placeholder for pipe creation logic
 def createPipe():
