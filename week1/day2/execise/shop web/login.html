@@ -1,0 +1,35 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="signup.css" />
+  <title>Login</title>
+</head>
+<body>
+  <div class="navbar">
+    <i class="fa fa-shopping-cart"></i>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Signup</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <h2>Login</h2>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="footer">&copy; <span id="year"></span> Developer Name</div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1598153346810-860daa814c4b?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    width: 300px;
+}
+
+.login-card h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-card input[type="text"], .login-card input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1em;
+}
+
+.login-card input[type="text"]:focus, .login-card input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-card button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+.login-card .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.login-card .forgot-password:hover {
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.social-icon:hover {
+    color: #00ff00; /* Change color on hover */
+}
